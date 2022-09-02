@@ -17,10 +17,7 @@ public class IndexController {
     }
 
 
-    @GetMapping("/")
-    public String index(){
-        return "/index";
-    }
+
 
     @PostMapping("/addUser")
     public ResponseEntity<User> AddUser(User user){
