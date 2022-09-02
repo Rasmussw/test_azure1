@@ -17,8 +17,12 @@ public class IndexController {
     }
 
 
+    @GetMapping("/")
+    public String index(){
+        return "/index";
+    }
 
-    @PostMapping("/")
+    @PostMapping("/addUser")
     public ResponseEntity<User> AddUser(User user){
 
         return new ResponseEntity<>(userService.save(user), HttpStatus.OK);
