@@ -17,8 +17,6 @@ public class IndexController {
     }
 
 
-
-
     @PostMapping("/addUser")
     public ResponseEntity<User> AddUser(User user){
 
