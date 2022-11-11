@@ -16,6 +16,10 @@ public class IndexController {
         this.userService = userService;
     }
 
+    @GetMapping("/")
+    public String index(){
+        return "hello world";
+    }
 
     @PostMapping("/addUser")
     public ResponseEntity<User> AddUser(User user){
